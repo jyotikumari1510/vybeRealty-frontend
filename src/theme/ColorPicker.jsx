@@ -63,7 +63,6 @@ import { useThemeStore } from "../store/themeStore";
 const ColorPicker = () => {
   const { bgColor, setBgColor, textColor, setTextColor } = useThemeStore();
 
-  // ✅ Apply saved theme colors when component mounts OR updates
   useEffect(() => {
     if (bgColor) {
       document.documentElement.style.setProperty("--custom-bg-color", bgColor);
