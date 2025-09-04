@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 import { useForm } from "react-hook-form";
-import MyTextarea from "../../../components/Atoms/MyTextarea";
+import MyTextarea from "../../../components/atoms/MyTextarea";
 import MyButton from "../../../components/atoms/MyButton";
 import { motion } from "framer-motion";
 

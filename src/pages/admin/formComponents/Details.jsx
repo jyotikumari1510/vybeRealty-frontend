@@ -7,7 +7,7 @@ import MyInputs from "../../../components/atoms/MyInputs";
 
 const Details = ({ onSubmitForm }) => {
   const {
-    register,
+    // register,
     handleSubmit,
     formState: { errors },
     watch,
