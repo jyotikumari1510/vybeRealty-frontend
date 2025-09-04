@@ -63,16 +63,24 @@ import { useThemeStore } from "../store/themeStore";
 const ColorPicker = () => {
   const { bgColor, setBgColor, textColor, setTextColor } = useThemeStore();
 
+  // useEffect(() => {
+  //   if (bgColor) {
+  //     document.documentElement.style.setProperty("--custom-bg-color", bgColor);
+  //   }
+  //   if (textColor) {
+  //     document.documentElement.style.setProperty(
+  //       "--custom-text-color",
+  //       textColor
+  //     );
+  //   }
+  // }, [bgColor, textColor]);
+
   useEffect(() => {
-    if (bgColor) {
-      document.documentElement.style.setProperty("--custom-bg-color", bgColor);
-    }
-    if (textColor) {
-      document.documentElement.style.setProperty(
-        "--custom-text-color",
-        textColor
-      );
-    }
+    document.documentElement.style.setProperty("--custom-bg-color", bgColor);
+    document.documentElement.style.setProperty(
+      "--custom-text-color",
+      textColor
+    );
   }, [bgColor, textColor]);
 
   return (
