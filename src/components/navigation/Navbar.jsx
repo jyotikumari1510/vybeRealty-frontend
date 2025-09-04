@@ -11,7 +11,16 @@ const Navbar = () => {
 
   return (
     <div className="nav-container">
-      <NavLink className="logo" to="/">
+      <NavLink
+        className="logo"
+        to="/"
+        style={{ display: "flex", alignItems: "center", gap: "10px" }}
+      >
+        <img
+          src="/Vybe.jpeg"
+          alt="logo"
+          style={{ width: "48px", borderRadius: "50%", height: "auto" }}
+        />
         VYBE <span>Realty</span>
       </NavLink>
 

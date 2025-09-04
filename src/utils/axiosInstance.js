@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://vercel.com/jyotis-projects-d1a02276/vr-backend/api",
+  baseURL: "https://vr-backend.vercel.app/api",
+  // baseURL: "http://localhost:8001/api",
 
   headers: {
     "Content-Type": "application/json",

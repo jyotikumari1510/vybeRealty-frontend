@@ -21,7 +21,7 @@ const Login = () => {
       console.log("logggg: ", res);
       localStorage.setItem("token", res.data.token);
       setMessage("✅ Login successful!");
-      navigate("/landing-page");
+      navigate("/");
     } catch (err) {
       setMessage("❌ " + (err.response?.data?.message || err.message));
     }
