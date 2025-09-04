@@ -44,7 +44,7 @@ const Description = ({ onSubmitForm }) => {
             <motion.div>
               <h1 className="detail-head">Fill Descriptions </h1>
               <div className="" style={{ marginBlock: "10px" }}>
-                <MyTextarea
+                <textarea
                   // {...register("description1", {
                   //   required: "Description is required",
                   // })}
@@ -54,7 +54,7 @@ const Description = ({ onSubmitForm }) => {
                   className={
                     errors.description ? "textarea errorInput" : "textarea"
                   }
-                />
+                ></textarea>
                 {/* {errors.description && (
                   <span className="errorText">
                     {errors.description.message}
@@ -63,7 +63,7 @@ const Description = ({ onSubmitForm }) => {
               </div>
 
               <div className="" style={{ marginBlock: "10px" }}>
-                <MyTextarea
+                <textarea
                   {...register("placeDetail", {
                     required: "Details are required",
                   })}
@@ -73,7 +73,7 @@ const Description = ({ onSubmitForm }) => {
                   className={
                     errors.description ? "textarea errorInput" : "textarea"
                   }
-                />
+                ></textarea>
                 {errors.description && (
                   <span className="errorText">
                     {errors.description.message}
@@ -82,7 +82,7 @@ const Description = ({ onSubmitForm }) => {
               </div>
 
               <div className="" style={{ marginBlock: "10px" }}>
-                <MyTextarea
+                <textarea
                   {...register("description2", {
                     required: "Description is required",
                   })}
@@ -92,7 +92,7 @@ const Description = ({ onSubmitForm }) => {
                   className={
                     errors.description ? "textarea errorInput" : "textarea"
                   }
-                />
+                ></textarea>
                 {errors.description && (
                   <span className="errorText">
                     {errors.description.message}
