@@ -13,12 +13,12 @@ const SignUp = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await api.post("/auth/register", form);
+      const res = await api.post("/api/auth/register", form);
       console.log("user response: ", res);
       setMessage("✅ Registered successfully!");
       setForm({ name: "", email: "", password: "" });
     } catch (err) {
-      setMessage("❌ " + (err.response?.data?.msg || err.message));
+      setMessage("❌ " + (err.response?.data?.message || err.message));
     }
   };
 
