@@ -1,0 +1,153 @@
+
+
+.property-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 400px;
+  margin: auto;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  &__area{
+     font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+  }
+
+  &__image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  &__content {
+    padding: 1rem;
+  }
+
+  &__location {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0.5rem 0rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  &__details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #555;
+
+    span {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+  }
+}
+
+.propertylist-container {
+  position: relative;
+  padding: 1rem;
+}
+
+.propertylist-header {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.add-property {
+  padding: 8px 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+
+  &:hover {
+    background: #0056b3;
+  }
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+  z-index: 10;
+
+  button {
+    padding: 10px;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+
+    &:hover {
+      background: #f5f5f5;
+    }
+  }
+}
+
+.propertylist-content {
+  display: flex;
+  // flex-direction: column;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 2%;
+
+  .property-card {
+    flex: 1 1 calc(35% - 20px);
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 1024px) {
+    .property-card {
+      flex: 1 1 calc(50% - 20px);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .property-card {
+      flex: 1 1 100%;
+    }
+  }
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .property-card {
+    max-width: 100%;
+
+    &__details {
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: flex-start;
+    }
+  }
+}
+
+

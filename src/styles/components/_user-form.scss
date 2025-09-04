@@ -1,0 +1,166 @@
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: #f7f7f7;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 800px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 0.4rem;
+  color: #111;
+}
+
+.required {
+  color: red;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.9rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background: #faf7f5;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.checkbox-flex {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.95rem;
+  color: #111;
+}
+
+.checkbox-flex input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: black;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background: black;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background: #222;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.form-container form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-container input {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.form-container button {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background: #0056b3;
+}
+
+.forgot-btn {
+  text-decoration: none;
+  color: #0056b3;
+  text-align: end;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 350px;
+  text-align: center;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal button {
+  margin-top: 10px;
+  padding: 0.5rem;
+  cursor: pointer;
+}

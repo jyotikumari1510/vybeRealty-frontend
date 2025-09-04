@@ -1,0 +1,8 @@
+@use "../abstract/mixin" as *;
+
+.formCont-bg {
+    // background-image($img-path, $width,$padding-inline, $padding-block, $height)
+    @include background-image('/buildingBG.jpg',100%,0px,0px,100vh);
+    background-attachment:fixed;
+    
+}
