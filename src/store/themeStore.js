@@ -6,8 +6,8 @@ export const useThemeStore = create(
   persist(
     (set, get) => ({
       theme: "dark", // default dark
-      bgColor: "#1e1e1e",
-      textColor: "#1e1e1e", // default dark background
+      bgColor: "#1e1e1e", // default background
+      textColor: "#ffffff", // default dark background
       setTheme: (theme) => set({ theme }),
       toggleTheme: () =>
         set({ theme: get().theme === "dark" ? "light" : "dark" }),
