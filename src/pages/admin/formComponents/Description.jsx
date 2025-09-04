@@ -1,8 +1,6 @@
 import { useForm } from "react-hook-form";
-import MyTextarea from "../../../components/Atoms/MyTextarea";
 import MyButton from "../../../components/atoms/MyButton";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 
 const Description = ({ onSubmitForm }) => {
   const {
@@ -10,7 +8,6 @@ const Description = ({ onSubmitForm }) => {
     handleSubmit,
     formState: { errors },
   } = useForm({});
-  const navigate = useNavigate();
 
   const onSubmit = (data) => {
     console.log(data);
