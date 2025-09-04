@@ -1,11 +1,7 @@
-import React from "react";
-import MyInputs from "../../../components/Atoms/MyInputs";
-import MyDropDown from "../../../components/atoms/MyDropDown";
 import { useForm } from "react-hook-form";
 import MyTextarea from "../../../components/Atoms/MyTextarea";
 import MyButton from "../../../components/atoms/MyButton";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 
 const Features = ({ onSubmitForm }) => {
   const {
@@ -13,7 +9,6 @@ const Features = ({ onSubmitForm }) => {
     handleSubmit,
     formState: { errors },
   } = useForm({});
-  const navigate = useNavigate();
 
   const onSubmit = (data) => {
     console.log(data);

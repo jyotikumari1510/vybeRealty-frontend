@@ -1,7 +1,6 @@
 import { useForm } from "react-hook-form";
 import MyButton from "../../../components/atoms/MyButton";
 import { motion } from "framer-motion";
-import MyTextarea from "../../../components/atoms/MyTextarea";
 
 const Description = ({ onSubmitForm }) => {
   const {
