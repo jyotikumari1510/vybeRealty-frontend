@@ -1,11 +1,8 @@
-import React from "react";
 import MyDropDown from "../../../components/atoms/MyDropDown";
 import { useForm } from "react-hook-form";
-import MyTextarea from "../../../components/Atoms/MyTextarea";
 import MyButton from "../../../components/atoms/MyButton";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 import MyInputs from "../../../components/atoms/MyInputs";
 
 const Details = ({ onSubmitForm }) => {
@@ -182,21 +179,6 @@ const Details = ({ onSubmitForm }) => {
                   </div>
                 </div>
               </div>
-
-              {/* Full-width description textarea
-      <div className="form-grid">
-        <div className="full-width">
-          <MyTextarea
-            {...register("description", { required: "Description is required" })}
-            placeholder="Enter property description"
-            rows={6}
-            cols={60}
-            className={errors.description ? "error" : "textarea"}
-          />
-          {errors.description && <span className="errorText">{errors.description.message}</span>}
-        </div>
-      </div> */}
-
               <div className="button-cont">
                 {/* <MyButton type="submit" className="formButton" name="Submit">
                   Submit
