@@ -1,7 +1,7 @@
 export const properties = [
   {
     image: ["/property1.jpg", "/property2.jpg", "/property3.jpg"],
-    location: "New York, USA",
+    location: "Melbourne",
     area: 1500,
     bedrooms: 3,
     bathrooms: 2,
@@ -9,7 +9,7 @@ export const properties = [
   },
   {
     image: ["/property7.jpg", "/property5.jpg", "/property6.jpg"],
-    location: "Los Angeles, USA",
+    location: "Sydney",
     area: 1900,
     bedrooms: 4,
     bathrooms: 3,
@@ -17,7 +17,7 @@ export const properties = [
   },
   {
     image: ["/property8.jpg", "/roperty6.jpg", "/property5.jpg"],
-    location: "New York City, USA",
+    location: "Canberra",
     area: 1100,
     bedrooms: 2,
     bathrooms: 1,
@@ -25,7 +25,7 @@ export const properties = [
   },
   {
     image: ["/property8.jpg", "/property1.jpg", "/property4.jpg"],
-    location: "San Francisco, USA",
+    location: "Perth",
     area: 1800,
     bedrooms: 4,
     bathrooms: 2,
@@ -33,7 +33,7 @@ export const properties = [
   },
   {
     image: ["/property5.jpg", "/property6.jpg", "/property7.jpg"],
-    location: "Miami, USA",
+    location: "Brisbane",
     area: 3000,
     bedrooms: 2,
     bathrooms: 2,
@@ -41,7 +41,7 @@ export const properties = [
   },
   {
     image: ["/property1.jpg", "/property4.jpg", "/property6.jpg"],
-    location: "Chicago, USA",
+    location: "Perth",
     area: 1200,
     bedrooms: 5,
     bathrooms: 3,

@@ -1,5 +1,5 @@
 import ThemeToggler from "../../theme/ThemeToggler";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
@@ -11,9 +11,9 @@ const Navbar = () => {
 
   return (
     <div className="nav-container">
-      <Link className="logo" to="/">
+      <NavLink className="logo" to="/">
         VYBE <span>Realty</span>
-      </Link>
+      </NavLink>
 
       <button
         className="menu-toggle"
@@ -26,25 +26,41 @@ const Navbar = () => {
         <nav className="nav-links">
           <ul>
             <li>
-              <Link to="/" onClick={() => setMenuOpen(false)}>
+              <NavLink
+                to="/"
+                onClick={() => setMenuOpen(false)}
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li className="down-arrow">
-              <Link to="/properties" onClick={() => setMenuOpen(false)}>
+              <NavLink
+                to="/properties"
+                onClick={() => setMenuOpen(false)}
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
                 Properties
-              </Link>
+              </NavLink>
               <MdKeyboardArrowDown size={22} />
             </li>
             <li>
-              <Link to="/about" onClick={() => setMenuOpen(false)}>
+              <NavLink
+                to="/about"
+                onClick={() => setMenuOpen(false)}
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
                 About Us
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/contact" onClick={() => setMenuOpen(false)}>
+              <NavLink
+                to="/contact"
+                onClick={() => setMenuOpen(false)}
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
                 Contact Us
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </nav>

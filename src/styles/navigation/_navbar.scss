@@ -1,6 +1,6 @@
 .logo {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--custom-text-colorr);
   font-size: xx-large;
   font-weight: bold;
 }
@@ -35,10 +35,17 @@
 .nav-links a {
   font-size: large;
   text-decoration: none;
-  color: var(--text-color);
-
+  color: var(--custom-text-color);
   border-bottom: 2px solid transparent;
-  transition: border-bottom 0.3s ease;
+  transition: all 0.3s ease;
+  padding-bottom: 4px;
+}
+
+/* Highlight active tab */
+.nav-links a.active {
+  border-bottom: 2px solid blue;
+  font-weight: bold;
+  color: var(--primary-color);
 }
 
 .down-arrow {
@@ -52,7 +59,7 @@
   display: none;
   background: none;
   border: none;
-  color: var(--text-color);
+  color: var(--custom-text-color);
   cursor: pointer;
 }
 
