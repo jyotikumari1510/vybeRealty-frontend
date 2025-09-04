@@ -75,10 +75,10 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="footer__bottom">
         <p>
-          Vybe Realty Real Estate Broker LLC is a company registered in Dubai,
-          United Arab Emirates, with License Number 1124305 and registered at
-          the Real Estate Regulatory Agency under the number 33088. PO Box
-          450524.
+          Vybe Realty Real Estate Broker LLC is a company registered in
+          Australia, United Arab Emirates, with License Number 1124305 and
+          registered at the Real Estate Regulatory Agency under the number
+          33088. PO Box 450524.
         </p>
       </div>
     </footer>

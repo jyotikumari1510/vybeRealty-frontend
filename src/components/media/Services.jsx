@@ -8,7 +8,7 @@ const services = [
     image: "/property2.jpg",
     title: "Off-Plan Developments",
     description:
-      "Exclusive pre-market access to Dubai’s latest emerging projects.",
+      "Exclusive pre-market access to Australia latest emerging projects.",
   },
   {
     image: "/property3.jpg",
@@ -31,7 +31,7 @@ const services = [
 const Services = () => {
   return (
     <>
-      <div className="service-container" >
+      <div className="service-container">
         <h1 className="sub-heading">
           EXCEPTIONAL REAL ESTATE SERVICES, TAILORED TO YOU
         </h1>
@@ -57,8 +57,8 @@ const Services = () => {
               <p>
                 Whether you’re expanding your business footprint, securing a
                 high-yield asset, or acquiring a signature home, Neo Realty
-                provides end-to-end expertise across Dubai’s most lucrative real
-                estate categories.
+                provides end-to-end expertise across Australia most lucrative
+                real estate categories.
               </p>
               <div className="portfolio-links">
                 <a href="/about">➔ About Company</a>
