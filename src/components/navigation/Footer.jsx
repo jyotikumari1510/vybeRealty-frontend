@@ -15,11 +15,13 @@ const Footer = () => {
               Vybe Realty | Redefining Luxury Real Estate
             </h4>
             <p className="footer__desc">
-              As a boutique brokerage, Vybe Realty delivers a seamless,
-              personalized journey through Dubai’s finest residential and
-              commercial properties. From luxury homes to strategic investments,
-              we offer expert guidance with precision, care, and discretion —
-              ensuring every transaction is effortless and rewarding.
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure there isn't anything embarrassing
+              hidden in the middle of text. All the Lorem Ipsum generators on
+              the Internet tend to repeat predefined chunks as
             </p>
             <p className="footer__desc">
               Your vision. Our expertise. Welcome to Vybe Realty.
