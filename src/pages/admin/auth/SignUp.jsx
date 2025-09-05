@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import api from "../../../utils/axiosInstance";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const SignUp = () => {
   const [form, setForm] = useState({ name: "", email: "", password: "" });
   const [message, setMessage] = useState("");
+
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -13,10 +15,13 @@ const SignUp = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await api.post("/api/auth/register", form);
+      const res = await api.post("/auth/register", form);
       console.log("user response: ", res);
       setMessage("✅ Registered successfully!");
       setForm({ name: "", email: "", password: "" });
+      setTimeout(() => {
+        navigate("/admin/login");
+      }, 1000);
     } catch (err) {
       setMessage("❌ " + (err.response?.data?.message || err.message));
     }

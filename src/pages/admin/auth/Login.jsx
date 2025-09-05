@@ -17,12 +17,13 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await api.post("/api/auth/login", form);
+      const res = await api.post("/auth/login", form);
       console.log("logggg: ", res);
       localStorage.setItem("token", res.data.token);
       setMessage("✅ Login successful!");
       navigate("/");
     } catch (err) {
+      console.log("error: ", err.response?.data?.message);
       setMessage("❌ " + (err.response?.data?.message || err.message));
     }
   };
