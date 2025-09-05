@@ -20,7 +20,7 @@ const SignUp = () => {
       setMessage("✅ Registered successfully!");
       setForm({ name: "", email: "", password: "" });
       setTimeout(() => {
-        navigate("/admin/login");
+        navigate("/admin");
       }, 1000);
     } catch (err) {
       setMessage("❌ " + (err.response?.data?.message || err.message));
